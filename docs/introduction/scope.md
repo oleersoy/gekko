@@ -8,7 +8,7 @@ Gekko aggregates market data into [OHLC candles](https://en.wikipedia.org/wiki/O
 
 ## Strategies
 
-Strategies are scripts that receive market data in the form of (OHLC candles) and execute buy / sell orders which could involve the calculation and usage of trading indicators. See [Creating aa Strategy](../strategies/creating_a_strategy.html) for more information.
+Strategies are scripts that receive market data in the form of (OHLC candles) and execute buy / sell orders which could involve the calculation and usage of trading indicators. See [Creating a Strategy](../strategies/creating_a_strategy.html) for more information.
 
 The limits of this design are::
 
