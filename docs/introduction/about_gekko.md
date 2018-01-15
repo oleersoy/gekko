@@ -1,6 +1,8 @@
 # About Gekko
 
-Gekko is a **free and open source** Bitcoin TA trading and backtesting platform that connects to popular Bitcoin exchanges. It is written in javascript and runs on [nodejs](http://nodejs.org).
+Gekko is a **free and open source** trading and backtesting platform that connects to popular crypto currency exchanges. It is written in javascript and runs on [nodejs](http://nodejs.org).
+
+Gekko makes it very easy to automate your own trading stragies using a wide assortment of technical analysis (TA) indicators and metrics.
 
 *Use Gekko at your own risk.*
 
@@ -8,35 +10,33 @@ Gekko is a **free and open source** Bitcoin TA trading and backtesting platform 
 
 ## The gist
 
-Gekko is a tool that makes it very easy to automate your own trading stragies.
-
 ![gist of gekko](https://gekko.wizb.it/_static/gekko-gist.png)
 
-You can either create your own trading strategy or start with the built-in example strategies. Once you have a strategy you can use Gekko to automatically run it in a few different ways:
+Either create a new custom strategy or start with the built-in example. Run the strategy in one of the following modes:
 
-- **Backtest**: You can start a simulation of the strategy over a historical data period and Gekko will tell you what would have happened (which trades would have been performed as well as overall performance and risk metrics).
-- **Paper trader**: You can run the strategy in realtime simulate trading (trade with fake money) to see in realtime how profitable your strategy would have been.
-- **Tradebot**: You can run the strategy in realtime and automatically execute orders based on the signals.
+- **Backtest**: Simulate the strategy over a historical data period in order to determine how profitable it is.
+- **Paper trader**: Run a realtime simulation of the strategy with fake money.
+- **Tradebot**: You can run the strategy in realtime and automatically execute orders based on signals.
 
-All the above modes can be run from the user interface, this interface will show charts and performance/risk statistics.
+All the above modes can be run from the user interface.  It shows both charts and performance/risk statistics.
 
 ## Strategies
 
-Gekko comes with some [example strategies](../strategies/example_strategies.md) (which implement a single indicator). But with some basic javascript you can [create your own strategies](../strategies/creating_a_strategy.md). You can use over 130 indicators to create your perfect prediction model ([full list](../strategies/talib_indicators.md) of supported indicators). *Why don't you combine Bollinger Bands, CCI and MACD with a STOCHRSI indicator?*
+Gekko comes with some [example strategies](../strategies/example_strategies.md) (which implement a single indicator). With some basic javascript knowledge you can [create your own strategies](../strategies/creating_a_strategy.md). You can use over 130 indicators to create the perfect prediction model ([full list](../strategies/talib_indicators.md) of supported indicators). *Why don't you combine Bollinger Bands, CCI and MACD with a STOCHRSI indicator?*
 
 ## Automated Trading platform
 
-Gekko can watch the realtime markets, automatically excecuting and evaluating your strategies in the process. Whilst doing this Gekko will store all market data it sees, this makes it possible to later simulate trading strategies against historical data to see whether they would have been profitable (backtesting).
+Gekko can automatically execute strategies on realtime markets. Gekko saves realtime market data creating the possibility of simulating / repeating other strategies again over the same market conditions (backtesting).
 
 ## Limitations
 
-Gekko is not built for HFT or anything related to being the fastest (like arbitrage) as well as some other things. Please see the [scope page](./scope.md) to read more about what you can and cannot do with Gekko.
+Gekko is not built for [HFT](https://en.wikipedia.org/wiki/High-frequency_trading). Please see the [scope page](./scope.md) to read more about what you can and cannot do with Gekko.
 
 ## How does Gekko work?
 
 ![Gekko architecture](https://wizb.it/gekko/static/architecture.jpg)
 
-Read more in the [architecture documentation](../internals/architecture.md).
+For more see the [architecture documentation](../internals/architecture.md).
 
 ## Credits
 
