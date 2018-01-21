@@ -16,7 +16,7 @@ The limits of this design are::
 - Strategies do not see trades
 - Strategies cannot look at the order book.
 - Strategies do not know what the current portfolio looks like.
-- Strategies can only trigger LONG or SHORT advice.
+- Strategies can either trigger a `LONG` (Sell all shares) or `SHORT` (Buy up to the current budget allowance).
 
 ## Strategy Execution
 
